@@ -1,0 +1,288 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Website</title>
+    <link rel="stylesheet" href="first.css">
+
+</head>
+
+
+<body>
+    <!--  ========nav bar  -->
+
+    <section class="menu_item">
+        <div>
+            <h1 class="main_heading">Vijay Tours and Travel's</h1>
+            <div>
+                <ul class="color_switcher">
+                    <li class="swipe_btn"> <button class="btn" id="white"></button></li>
+                    <li class="swipe_btn"> <button class="btn" id="Dark"></button></li>
+                    <li class="swipe_btn"> <button class="btn" id="black"></button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li class="list"><a href="">Home</a></li>
+                <li class="list"><a href="">Register</a></li>
+                <li class="list"><a href="">About_us</a></li>
+                <li class="list"><a href="">Booking</a></li>
+                <li class="list"><a href="signup.html">login</a></li>
+                <a href="#" id="close"><i>close </i></a>
+            </ul>
+            </drediv>
+            <div class="mobile">
+                <i id="bar" class="bar "> <img src="download.png"></i>
+            </div>
+
+    </section>
+    <!-- ==============section image slider  after nav bar  -->
+
+    <section class="container-slider">
+        <div class="container">
+            <div class="slider-wrapper">
+                <button id="pre-slide" class="slide-button left">&#8656;</button>
+                <div class="image-list">
+                    <img src="/image/beach1.jpeg" alt="img-1" class="image-item img1">
+                    <img src="/image/beach2.jpeg" alt="img-2" class="image-item img2">
+                    <img src="/image/beach3.jpg" alt="img-3" class="image-item img3">
+                    <img src="/image/beach4.jpg" alt="img-2" class="image-item img4">
+                    <img src="/image/beach5 (2).jpg" alt="img-3" class="image-item img5">
+                    <img src="/image/beach6.jpg" alt="img-2" class="image-item img6">
+                    <img src="/image/beach7.jpg" alt="img-3" class="image-item img7">
+                    <img src="/image/beach2.jpeg" alt="img-2" class="image-item img2">
+                    <img src="/image/beach3.jpg" alt="img-3" class="image-item img3">
+                </div>
+                <button id="next-slide" class="slide-button right">&#8658;</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ====================section 1 start  -->
+
+    <section id="section_1">
+        <div style="padding-top: 5px; ">
+            <h2 style="padding-left: 0px; ">Where To ?</h2>
+            
+            <div class="where_TO">
+                <ul class="Place">
+                    <li><a href="">Search All</a></li>
+                    <li><a href="">Restaurant</a></li>
+                    <li><a class="item" href="">Hotels</a></li>
+                    <li><a href="">City</a></li>
+                    <li><a href="">Holiday Homes</a></li>
+                </ul>
+
+                <input type="text"
+                    style="padding: 5px; margin: 15px 5px 10px 5px; border-radius: 15px; border: 2px solid rgb(150, 208, 192); width: 55%;"
+                    placeholder="Serach for location">
+            </div>
+        </div>
+        <div id="title" style="background-color: rgb(150, 208, 192); padding: 8px 0px 8px 0px; border-radius: 3px;">
+            <h1 class="main_heading">#Lets Plan your trip</h1>
+            <h5>Enjoy Every Movment With US</h5>
+        </div>
+        
+        <div class="s1_div1">
+            <!-- here we take first div  -->
+            <div style="display: flex; align-items: center; justify-content: center;padding: 5px; " class="s1_div2">
+                <img src="/image/elephant.jpg" alt="" style="border-radius: 15px; width: 100%;">
+
+                <!-- <div class="div3">
+                    <div class="vijay"><img src="gateIndia.jpg" alt="" class="bg1"></div>
+                    <div  class="vijay2"><img src="rajasthan.jpg" alt="" class="bg3"></div>
+                </div>
+                <div class="div4">
+                    <div class="vijay2"><img src="nepalTemple.jpg" alt="" class="bg1"></div>
+                    <div class="vijay"><img src="rajmahal.jpg" alt="" class="bg3"></div>
+                </div> -->
+            </div>
+
+            <!-- second div tag of section 1 -->
+            <div class="s1_div3">
+                <div class="div1form">
+                    <form action="" class="form">
+                        <input type="email" class="submit" placeholder="Email">
+                        <input type="password" class="submit" placeholder="Enter password">
+                        <input type="mobile_no" class="submit" placeholder="Enter Mobile number">
+                        <input type="otp" class="submit" placeholder="Enter 6 digit otp">
+                        <label for="Destination" class="submit">From
+                            <select name="Destination" id="submit">
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Thane">Thane</option>
+                                <option value="Hydrabad">Hydrabad</option>
+                            </select>
+                        </label>
+                        <label for="Destination" class="submit">To
+                            <select name="Destination" id="submit">
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Thane">Thane</option>
+                                <option value="Hydrabad">Hydrabad</option>
+                            </select>
+                        </label>
+                        <input type="submit" class="submit" placeholder="Booking" value="Book">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--  ======================================= section for selection  -->
+    <section class="select" >
+        Select the section below
+        <h2>#Explore India 2024</h2>
+        <div class="select-item" >
+            <div> 
+                <img src="/image/img4.jpg" alt="" style="border-radius: 55px 55px 0px 0px;">
+                <button class="btn">Temples</button>
+            </div>
+            <div> 
+                <img src="/image/ahmdabad.jpg" alt="" style="border-radius: 55px 55px 0px 0px; ">
+                <button class="btn">Top Cities</button>
+            </div>
+            <div> 
+                <img src="/image/temp1.jpg" alt="" style="border-radius: 55px 55px 0px 0px;">
+                <button class="btn">Monuments</button>
+            </div>
+            <div> 
+                <img src="/image/beach2.jpeg" alt="" style="border-radius: 55px 55px 0px 0px; ">
+                <button class="btn">Best Beaches</button>
+            </div>
+            
+            
+            
+            
+        </div>
+        
+    </section>
+    <!-- ==========================service section start here   -->
+    <section class="service">
+        <div class="service-container">
+            <!--  heding of service section  -->
+            <p> What we Serve</p>
+            <h2>Top Values for you</h2>
+            <p>Try variety of benefits when using our services .</p>
+            <div class="service-section">
+                <div id="service-list">
+                    <img src="/image/location.jpg" alt="">
+                    <h2>Lot Of Choices</h2>
+                    <p>Total 400+ Destination that we work with</p>
+                </div>
+                <div id="service-list">
+                    <img src="/image/tourGuide.jpg" alt="">
+                    <h2>Best Tour Guide</h2>
+                    <p>Our tour Guide with 5+ years of experiance.</p>
+                </div>
+                <div id="service-list">
+                    <img src="/image/booking.jpg" alt="">
+                    <h2>Easy Bookings</h2>
+                    <p>With an easy and Fast ticket Booking Process.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--  =========================gallery section start here  -->
+
+    <!--  add here top destination section  -->
+    <section id="section_2">
+    <div class="service-container" >
+        <h1 class="main_heading sec2_head">Major Destination</h1>
+        <h5>Top Cities of India</h5>
+        <div class="city">
+            <img class="city-name" src="/image/agra.jpg" alt="">
+            <img class="city-name" src="/image/mumbai1.jpg" alt="">
+            <img class="city-name" src="/image/bangolre1.jpg" alt="">
+            <img class="city-name" src="/image/hydrabad.jpg" alt="">
+        </div>
+    </div>
+        
+    </section>
+
+    <script src="first.js"></script>
+</body>
+<!--  ====== footer start here  -->
+<footer>
+    <div class="Subscribe">
+        <div id="div1Footer">
+            <p class="sub_heading">keep in touch </p>
+            <h3 class="main_heading">Travel With Us </h3>
+        </div>
+        <div>
+            <form action="get" class="footer_form">
+                <div>
+                    <input type="email" placeholder="Enter your email"
+                        style="padding: 5px; border: 2px solid rgb(150, 208, 192);">
+                    <input type="button" name="Subscribe" style="width: 55px; padding: 5px; " value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div class="footerContent">
+            <div class="OwnerInfo">
+                <div class="Name title">Vijay Tours And Travels</div>
+                <div class="info font">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit.Atque sit laborum dolor. Placeat, dolore njfnijn bbf jwb jweruri jnwefi jiewij
+                </div>
+                <div>
+                    <ul class="Icon">
+                        <li><a href="#"><img class="social_media_icon" src="insta.png" alt=""></a></li>
+                        <li><a href="#"><img class="social_media_icon" src="telegram.png" alt=""></a></li>
+                        <li><a href="#"><img class="social_media_icon" src="twitter.png" alt=""> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resource">
+                <div class="Agency">
+                    <p class="title"> Top Cities</p>
+                    <ul>
+                        <li><a href="" class="font1">Pune</a></li>
+                        <li><a href="" class="font1">Mumbai</a></li>
+                        <li><a href="" class="font1">Delhi</a></li>
+                        <li><a href="" class="font1">Bangalore</a></li>
+                    </ul>
+                </div>
+                <div class="Partner">
+                    <p class="title">Our Partner</p>
+                    <ul>
+                        <li><a href="" class="font1">Goibibo Bus</a></li>
+                        <li><a href="" class="font1">Goibibo Hotels</a></li>
+                        <li><a href="" class="font1">Make My Trip</a></li>
+                        <li><a href="" class="font1">Taj Hotels</a></li>
+                    </ul>
+                </div>
+                <div class="Partner">
+                    <P class="title">About_us</P>
+                    <ul>
+                        <li><a href="" class="font1">Contact-us</a></li>
+                        <li><a href="" class="font1">Agent Registration</a></li>
+                        <li><a href="" class="font1">Careers</a></li>
+                        <li><a href="" class="font1">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Copyright">Copyright@ownerVijay</div>
+    </div>
+</footer>
+
+
+</html>

@@ -1,0 +1,690 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --back__2_color: rgba(229, 217, 90, 0.284);
+    /* section 1  l ,footer */
+    --back__3_color: rgb(150, 208, 192);
+    /* section 2  project ,nav bar,login form*/
+    --heading_1_color: black;
+    /* main heading font */
+    --heading_2_color: white;
+    /* small heading font */
+}
+
+body {
+    width: 100%;
+    /* background-image:url(taj_Mahal1.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover; */
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ================================ navbar start here  */
+.menu_item {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px 25px 15px;
+    background-color: var(--back__3_color);
+    /* background-image: url("image1.jpg"); */
+  }
+
+#navbar li {
+    padding: 8px;
+}
+
+#navbar a {
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    border-radius: 5px;
+    background-color: white
+}
+
+#navbar {
+    display: flex;
+    text-decoration: none;
+    color: var(--heading_2_color);
+    list-style: none;
+}
+.color_switcher {
+    display: flex;
+    margin-top: 5px;
+    background-color: rgba(10, 59, 57, 0.369);
+    width: fit-content;
+}
+
+.color_switcher .btn {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#white {
+    background-color: aqua;
+}
+
+#Dark {
+    background-color: orange;
+}
+
+#black {
+    background-color: rgb(235, 69, 235);
+}
+
+/* .btn:hover {
+    background-color: rgb(138, 199, 182);
+} */
+/*  this is three line img used for responsive  */
+.mobile {
+    display: none;
+}
+
+/* navbar ends here  */
+
+/*  ==============================section 1 i.e image slider start here  */
+.container-slider {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-slider div {
+    width: 100%;
+    height: 50%;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin-top: 25px;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    margin: 5px;
+    border: none;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 54%;
+}
+.slider-wrapper .slide-button:hover{
+    background-color: rgba(114, 109, 109, 0.868);
+}
+.slider-wrapper .slide-button#pre-slide{
+    left: -20px;
+}
+.slider-wrapper .slide-button#next-slide{
+    right: -20px;
+}
+
+.image-item{
+    border-radius: 10px;
+}
+
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 15px;
+    font-size: 0;
+    overflow-x: auto;
+    /* using only overflow we get scrollbar ..*/
+    scrollbar-width: none;
+    /*none;but using this we didnt get scrollbar */
+    grid-template-columns: repeat(10, 1fr);
+    /* by using thses img are side by side*/
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+/* now giving height and width to image */
+
+.slider-wrapper .image-list .image-item {
+    width:30vw;
+    height: 45vh;
+    object-fit: cover;
+}
+/*  section 1 of image slider ends here  */
+/* ===================================section 1 start here  where to go section  */
+
+#section_1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.Place {
+    display: flex;
+    justify-content: center;
+}
+
+.Place li {
+    position: relative;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.Place li a:hover::after {
+    content: "";
+    width: 90%;
+    height: 3px;
+    background-color: rgb(168, 192, 186);
+    position: absolute;
+    bottom: -4px;
+    left: 12px;
+}
+
+.where_TO input {
+    width: 60%;
+}
+
+.s1_div1 {
+    display: flex;
+    padding: 25px 5px 5px 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.s1_div1 div {
+    margin: auto 8px;
+}
+
+/* 
+// this is for four image side by side
+
+.div3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.vijay img {
+    height: 32vh;
+    width: 15vw;
+    border-radius: 15px;
+    padding: 0px 0px 5px 0px;
+}
+
+.vijay2 img {
+    height: 22vh;
+    width: 15vw;
+    border-radius: 15px;
+    padding: 5px 0px 5px 0px;
+} */
+
+/*  ===========>>>>> form start  here :-  */
+
+.s1_div3 {
+    display: inline;
+    width: 80%;
+    padding-left: 25px;
+}
+
+.div1form {
+    background-color: var(--back__3_color);
+    padding: 10px 1;
+    border-radius: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.div1form input,
+label {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    width: 80%;
+}
+
+#submit {
+    width: 70%;
+    margin: 2px 5px 2px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* .s1_div2 {
+    display: flex;
+} */
+/* ========================selection section start  */
+.select{
+background-color: aquamarine;
+ padding: 10px; 
+ margin: 10px 0px 10px 0px; 
+ justify-content: center; 
+ text-align: center;
+}
+.select-item{
+    display: inline-flex;
+     /* grid-template-columns: 30% 30%;  */
+     text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.select-item div img, button{
+    width: 80%;
+}
+
+.select-item button{
+    margin: 5px;
+    padding: 2px;
+    border-radius: 2px;
+    border: none;
+}
+/*  ====================service section start   */
+.service>.service-container{
+    padding: 15px;
+    background-color: var(--back__3_color);
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.service-container>p{
+    color: rgb(239, 237, 242);
+    font-weight: 800;
+}
+.service-container div{
+    padding:15px;
+}
+.service-section{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+}
+#service-list{
+    background-color: rgb(210, 232, 232);
+    margin: 5px;
+    border-radius:10px;
+}
+.service-section #service-list img{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+}
+
+/*  ===============>>>>  section 2 start here  */
+#section_2{
+    background-color: var(--back__3_color);
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+}
+#section_2 .service-container{
+    padding: 15px;
+    
+}
+.city{
+    justify-content: center;
+}
+.city img{
+    width: 230px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 15px;
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+}
+
+
+#s2_div img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+
+/*===============>>>>>  footer start here  */
+footer {
+    padding: 20px 15px 0px 15px;
+    background-image: url("image1.jpg");
+}
+
+.Subscribe {
+    display: flex;
+    justify-content: center;
+}
+
+.Subscribe div {
+    padding: 5px;
+}
+
+#div1Footer p {
+    padding-right: 32px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(53, 207, 184, 0.572);
+    /* background-image: url('taj\ _Mahal1.jpg'); */
+    background-size: cover;
+    padding: 15px 15px 3px 15px;
+    border-radius: 15px;
+}
+
+.OwnerInfo {
+    text-align: left;
+    width: 55%;
+}
+
+.Name {
+    font-weight: 800;
+    padding: 5px 15px 5px 0px;
+}
+
+.Icon {
+    display: flex;
+    list-style: none;
+    padding: 10px 5px 5px 1px;
+}
+
+.social_media_icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.resource {
+    display: flex;
+}
+
+.resource div {
+    padding-left: 15px;
+}
+
+.title {
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(64, 62, 62);
+}
+
+ul li {
+    list-style: none;
+    text-align: left;
+    font-size: 13px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ==============>>>>> font size of footer in mobile  */
+.title {
+    font-size: 14px;
+}
+
+.font {
+    font-size: 11px;
+}
+
+.font1 {
+    font-size: 10px;
+}
+
+.Copyright {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* =====================   media queirs ============================================== */
+@media screen and (min-width:600px) {
+    #close {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main_heading {
+        font-size: 15px;
+    }
+
+    .sub_heading {
+        font-size: 9px;
+        color: black;
+    }
+
+    /*  responsive navbar  */
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        top: 0;
+        right: -300px;
+        background-color: aliceblue;
+        box-shadow: 0 40px 60px black;
+        padding: 20px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar li {
+        padding: 8px;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    .footer_form input {
+        font-size: 8px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    /* for converting img to different color */
+    /* .footerContent{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    } */
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        color: black;
+        padding: 0px;
+    }
+
+    #navbar a {
+        color: black;
+    }
+
+    .mobile {
+        display: inline;
+    }
+
+    .mobile img {
+        width: 22px;
+    }
+
+    #close {
+        position: absolute;
+        top: 1px;
+    }
+
+    #navbar #close {
+        color: rgb(58, 84, 101);
+    }
+
+    /* =============== slider images mumbai wale   */
+    .slider-wrapper {
+        height: 15rem;
+        /* margin-top: 50px; */
+      }
+    .slider-wrapper .image-list .image-item{
+        width: 35vw;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    /* =============== slider photo  */
+
+    .sliding_button .btn {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(66, 172, 142);
+    }
+
+    .btn:hover {
+        background-color: rgb(144, 193, 174);
+    }
+
+    /* ===============>>>> where to section  */
+    .Place li {
+        font-size: 10px;
+        padding-left: 8px;
+    }
+
+    .where_TO input {
+        font-size: 10px;
+    }
+
+    /* ============ >>>>>>  section 1 images  */
+    /* .vijay img {
+        width: 25vw;
+        height: 15vh;
+    }
+
+    .vijay2 img {
+        width: 25vw;
+        height: 10vh;
+    } */
+
+    /*  section 1 and section 2 responsive  */
+    /* .s1_div1 {
+        display: flex;
+        flex-direction: column;
+    }
+    /*  making form responsive */
+    /* .s1_div3{
+        width: 95%;
+        padding: 0px;
+    }  */
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .form input,label{
+        font-size: 10px;
+        height: 15px;
+     
+    }
+    #submit{
+        font-size: 10px;
+        padding: 0px;
+        height: 15px;
+    }
+    
+    .div1form input,
+    label {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        margin: 5px;
+        width: 100%;
+    }
+    /* =========================selction section  */
+    .select-item{
+        display: inline;
+       
+    }
+    .select-item div img, button{
+        width: 50%;
+    }
+/* ==========================================service section start here  */
+
+.service-section{
+    display: inline;
+    /* grid-template-columns: 33% 33% 33%; */
+    justify-content: center;
+   
+}
+.city{
+    display: block;
+  
+}
+.city img{
+    width: 120px;
+    height: 120px;
+}
+
+/* ========================= section 2 */
+
+
+
+
+    /* ==================>>>>> footer section  */
+    .OwnerInfo {
+        width: 90%;
+    }
+
+    .Icon .social_media_icon {
+        height: 12px;
+        width: 12px;
+    }
+
+    .footerContent {
+        display: block;
+    }
+
+    /*  ======================>>>>>>font size of footer in mobile  */
+    .title {
+        font-size: 12px;
+    }
+
+    .font,
+    .font1 {
+        color: black;
+    }
+
+    .font {
+        font-size: 10px;
+    }
+
+    .font1 {
+        font-size: 8px;
+    }
+
+    .Copyright {
+        padding: 15px 0px 0px 0px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
